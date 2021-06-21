@@ -1,7 +1,7 @@
 # Light Switch for Bootstrap 5
 
 <div align="center">
-    <img src="https://uxwing.com/wp-content/themes/uxwing/download/01-user_interface/light-mode.png" height="250"/>
+    <img src="https://w7.pngwing.com/pngs/6/989/png-transparent-computer-icons-favicon-latching-relay-light-switch-icons-no-attribution-miscellaneous-desktop-wallpaper-electrical-switches.png" height="250"/>
 </div>
 
 <p align="center">
