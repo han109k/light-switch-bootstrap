@@ -26,6 +26,7 @@
                     document.body.classList.add("bg-dark");
                     document.body.classList.add("text-light");        
                 }
+                lightSwitch.checked = true;
             }
         }
         function lightMode() {
