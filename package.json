@@ -14,15 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/han109k/light-switch.git"
   },
-  "author": "han109k (thehan.blog)",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/han109k/light-switch/issues"
   },
   "homepage": "https://github.com/han109k/light-switch#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "files": [
     "switch.js",
     "package.json",
