@@ -1,7 +1,11 @@
 {
   "name": "light-switch",
   "version": "0.1.1",
-  "description": "<p align=\"center\"> <b>Basic Bootstrap 5 custom checkbox to use night mode in your web site.</b> </p>",
+  "description": "Basic Bootstrap 5 custom checkbox to use night mode in your web site.",
+  "keywords": [
+    "bootstrap",
+    "dark-mode"
+  ],
   "main": "switch.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/han109k/light-switch.git"
   },
-  "author": "han109k",
+  "author": "han109k (thehan.blog)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/han109k/light-switch/issues"
@@ -18,5 +22,10 @@
   "homepage": "https://github.com/han109k/light-switch#readme",
   "publishConfig": {
     "registry":"https://npm.pkg.github.com"
-  }
+  },
+  "files": [
+    "switch.js",
+    "package.json",
+    "README.md"
+  ]
 }
