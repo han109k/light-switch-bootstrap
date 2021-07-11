@@ -1,9 +1,5 @@
 # 💡 Light Switch for Bootstrap 5
 
-<div align="center">
-    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/274/light-bulb_1f4a1.png" height="250"/>
-</div>
-
 <p align="center">
 <b>Basic Bootstrap 5 custom checkbox to use night mode in your web site.</b>
 </p>

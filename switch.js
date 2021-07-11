@@ -1,45 +1,64 @@
-(function() {
-    let lightSwitch = document.getElementById("lightSwitch");
-    if(lightSwitch) {
-        darkMode();
-        lightSwitch.addEventListener("change", function(e) {
-            lightMode();
-        });
-        function darkMode(checked) {
-            if(checked) {
-                localStorage.setItem("lightSwitch", "dark");
-            }
-            let isSelected =
-                localStorage.getItem("lightSwitch") !== null &&
-                localStorage.getItem("lightSwitch") === "dark";
-        
-            console.log(isSelected);
+/**
+ *  Light Switch @version v0.1.1
+ *  @author han109k
+ */
 
-            if(isSelected) {
-                document.querySelectorAll(".bg-light").forEach(element => {
-                    element.className = element.className.replace(/-light/g, "-dark");
-                });
-                if(document.body.classList.contains("text-dark")) {
-                        document.body.classList.replace("bg-light", "bg-dark");
-                        document.body.classList.replace("text-dark", "text-light");        
-                } else {
-                    document.body.classList.add("bg-dark");
-                    document.body.classList.add("text-light");        
-                }
-                lightSwitch.checked = true;
-            }
+(function () {
+  let lightSwitch = document.getElementById("lightSwitch");
+  if (lightSwitch) {
+    darkMode();
+    lightSwitch.addEventListener("change", () => {
+      lightMode();
+    });
+
+    /**
+     * @function darkmode
+     * @summary: firstly, checks if browser local storage has 'lightSwitch' key
+     * if key has 'dark' value then changes the theme to 'dark mode'
+     * Basically, replaces/toggles every CSS class that has '-light' class with '-dark'
+     */
+    function darkMode() {
+      let isSelected =
+        localStorage.getItem("lightSwitch") !== null &&
+        localStorage.getItem("lightSwitch") === "dark";
+
+      if (isSelected) {
+        document.querySelectorAll(".bg-light").forEach((element) => {
+          element.className = element.className.replace(/-light/g, "-dark");
+        });
+
+        document.body.classList.add("bg-dark");
+
+        if (document.body.classList.contains("text-dark")) {
+          document.body.classList.replace("text-dark", "text-light");
+        } else {
+          document.body.classList.add("text-light");
         }
-        function lightMode() {
-            if(lightSwitch.checked) {
-                darkMode(true);
-            } else {
-                document.querySelectorAll(".bg-dark").forEach(element => {
-                    element.className = element.className.replace(/-dark/g, "-light");
-                });
-                document.body.classList.replace("bg-dark", "bg-light"); 
-                document.body.classList.replace("text-light", "text-dark");
-                localStorage.removeItem("lightSwitch");
-            }
-        }
+        
+        // set light switch input to true
+        lightSwitch.checked = true;
+      }
     }
+
+    /**
+     * @function lightmode
+     * @summary: function first checks if the switch is on (checked) or not.
+     * If the switch is checked then set 'lightSwitch' local storage key and  call @function darkmode
+     * If the switch is off (non - checked) so it is light mode then switch the theme and
+     *  remove 'lightSwitch' key from local storage
+     */
+    function lightMode() {
+      if (lightSwitch.checked) {
+        localStorage.setItem("lightSwitch", "dark");
+        darkMode();
+      } else {
+        document.querySelectorAll(".bg-dark").forEach((element) => {
+          element.className = element.className.replace(/-dark/g, "-light");
+        });
+        // document.body.classList.replace("bg-dark", "bg-light");
+        document.body.classList.replace("text-light", "text-dark");
+        localStorage.removeItem("lightSwitch");
+      }
+    }
+  }
 })();
