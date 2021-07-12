@@ -8,14 +8,21 @@
 
 Switching to dark mode is done by toggling HTML tags that includes `-dark` or `-light` as a class. Performed by DOM manipulation using JavaScript. Text color also changed depending on lighting mode. **Local storage** is used to save preferences under the name *lightSwitch*
 
+## Installing
+
+- Download the latest release [v0.1.1](https://github.com/han109k/light-switch-bootstrap/archive/refs/tags/v0.1.1.zip)
+
+- Clone via `git clone https://github.com/han109k/light-switch-bootstrap.git`
+- Install with [npm](https://www.npmjs.com/package/light-switch-bootstrap) `npm i light-switch-bootstrap`
+
 ## Usage
 
 Add custom checkbox to your html file then reference the `switch.js` script:
 
 ```html
-<div class="form-check form-switch">
-    <label class="form-check-label for="lightSwitch">Dark Mode</label>
-    <input class="form-check-input" type="checkbox" id="lightSwitch">
+<div className="form-check form-switch">
+  <label className="form-check-label" htmlFor="lightSwitch"> Dark Mode </label>
+  <input className="form-check-input" type="checkbox" id="lightSwitch"/>
 </div>
 
 <script src="switch.js"/>

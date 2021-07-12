@@ -55,7 +55,6 @@
         document.querySelectorAll(".bg-dark").forEach((element) => {
           element.className = element.className.replace(/-dark/g, "-light");
         });
-        // document.body.classList.replace("bg-dark", "bg-light");
         document.body.classList.replace("text-light", "text-dark");
         localStorage.removeItem("lightSwitch");
       }
