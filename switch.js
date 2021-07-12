@@ -1,5 +1,5 @@
 /**
- *  Light Switch @version v0.1.1
+ *  Light Switch @version v0.1.2
  *  @author han109k
  */
 
@@ -42,9 +42,9 @@
 
     /**
      * @function lightmode
-     * @summary: function first checks if the switch is on (checked) or not.
-     * If the switch is checked then set 'lightSwitch' local storage key and  call @function darkmode
-     * If the switch is off (non - checked) so it is light mode then switch the theme and
+     * @summary: check whether the switch is on (checked) or not.
+     * If the switch is on then set 'lightSwitch' local storage key and call @function darkmode
+     * If the switch is off then it is light mode so, switch the theme and
      *  remove 'lightSwitch' key from local storage
      */
     function lightMode() {

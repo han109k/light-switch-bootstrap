@@ -34,4 +34,4 @@ Designed for default Bootstrap 5 theme. If you're using custom themes then, you 
 
 ## Example Implementation
 
-[Bootstrap 5 Demo](https://han109k.github.io/light-switch/)
+[Bootstrap 5 Demo](https://han109k.github.io/light-switch-bootstrap/)
