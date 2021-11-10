@@ -1,6 +1,5 @@
 /**
- *  Light Switch @version v0.1.2
- *  @author han109k
+ *  Light Switch @version v0.1.3
  */
 
 (function () {
