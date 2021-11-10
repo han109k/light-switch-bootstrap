@@ -1,6 +1,6 @@
 {
   "name": "light-switch-bootstrap",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Basic Bootstrap 5 custom checkbox to use night mode in your web site.",
   "keywords": [
     "bootstrap",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/han109k/light-switch.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/han109k/light-switch/issues"
   },
