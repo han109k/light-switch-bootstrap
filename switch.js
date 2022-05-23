@@ -26,6 +26,13 @@
       document.body.classList.add("text-light");
     }
     
+    // Tables
+    var tables = document.querySelectorAll("table");
+    for (var i = 0; i < tables.length; i++) {
+      // add table-dark class to each table
+      tables[i].classList.add("table-dark");
+    }
+    
     // set light switch input to true
     if (! lightSwitch.checked) {
       lightSwitch.checked = true;
@@ -48,6 +55,14 @@
       document.body.classList.replace("text-light", "text-dark");
     } else {
       document.body.classList.add("text-dark");
+    }
+    
+    // Tables
+    var tables = document.querySelectorAll("table");
+    for (var i = 0; i < tables.length; i++) {
+      if (tables[i].classList.contains("table-dark")) {
+        tables[i].classList.remove("table-dark");
+      }
     }
     
     if (lightSwitch.checked) {
