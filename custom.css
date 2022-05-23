@@ -1,3 +1,17 @@
 #lightSwitch {
-    transform: scale(1.8);
-  }
+  transform: scale(1.8);
+}
+
+.custom-theme.bg-light {
+  background-color: darkslategray !important;
+  border-radius: 3px;
+  color: gainsboro;
+  text-decoration: underline;
+}
+
+.custom-theme.bg-dark {
+  background-color: blanchedalmond !important;
+  box-shadow: 10px 5px 5px rgba(246, 255, 219, 0.5);
+  color: dimgray;
+  text-decoration: overline;
+}
