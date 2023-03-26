@@ -10,7 +10,7 @@ Switching to dark mode is done by toggling HTML tags that includes `-dark` or `-
 
 ## Installing
 
-- Download the latest release [v0.1.4](https://github.com/han109k/light-switch-bootstrap/archive/refs/tags/v0.1.4.zip)
+- Download the latest release [v0.1.5](https://github.com/han109k/light-switch-bootstrap/archive/refs/tags/v0.1.5.zip)
 
 - Clone via `git clone https://github.com/han109k/light-switch-bootstrap.git`
 - Install with [npm](https://www.npmjs.com/package/light-switch-bootstrap) `npm i light-switch-bootstrap`
@@ -25,7 +25,7 @@ Add custom checkbox to your html file then reference the `switch.js` script:
   <input class="form-check-input" type="checkbox" id="lightSwitch" />
 </div>
 
-<script src="switch.js" />
+<script src="/node_modules/light-switch-bootstrap/switch.js"></script>
 ```
 
 ### About Usage
